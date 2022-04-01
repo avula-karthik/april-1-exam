@@ -1,6 +1,8 @@
 import axios from 'axios';
+import { useState } from 'react';
 
 const Register = () => {
+    let [registration, setRegistration] = useState();
     const registerUser = (e) => {
         e.preventDefault();
         let username = e.target.username.value;
@@ -12,8 +14,9 @@ const Register = () => {
     };
     return (
         <div>
+            {registration}
             <h2>Registration form</h2>
-            <form className='form' onSubmit='registerUser'>
+            <form className='form' onSubmit={registerUser}>
                 <label>
                     <h3>Username</h3>
                 </label>
