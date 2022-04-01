@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-color: beige;
+}
+form{
+  width: 40%;
+  text-align: left;
+  margin: auto;
+}
